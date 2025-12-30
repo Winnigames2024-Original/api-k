@@ -1,0 +1,2 @@
+            - name: Setup PHP Project
+  uses: benzine-framework/action-setup-php@main
