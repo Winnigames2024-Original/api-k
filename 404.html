@@ -16,15 +16,15 @@
     <div class="container">
         <h1>404</h1>
         <h2>Oops! Page Not Found</h2>
-        <p>We can't seem to find the page you're looking for.</p>
-        <p>The requested URL was: <span id="broken-url"></span></p>
+        <p>We can't seem to find the <a href="./">"API'K"</a> api you're looking for.</p>
+        <p>The requested API was: <span id="broken-url"></span></p>
         <a href="/">Go to Homepage</a>
     </div>
 
     <script>
         // JavaScript to dynamically show the problematic URL
         // window.location refers to the current (non-existent) page's URL
-        document.getElementById('broken-url').textContent = window.location.href;
+        document.getElementById('broken-url').textContent = window.location.href.lastIndexOf('/');
 
         // You could also add more advanced features here, like:
         // - A search bar
