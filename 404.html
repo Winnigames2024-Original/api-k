@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Page Not Found</title>
+    <titleAPI'K | 404 Page Not Found</title>
     <style>
         body { font-family: sans-serif; text-align: center; padding: 50px; }
         .container { max-width: 600px; margin: auto; }
@@ -17,7 +17,7 @@
     <div class="container">
         <h1>404</h1>
         <h2>Oops! Page Not Found</h2>
-        <p>We can't seem to find the <a href="./">'<span id="kakoyito-bagnutiyi-ssilka_service_name">API'K</span></a>' api you're looking for.</p>
+        <p id="p_error1">We can't seem to find the <a href="./">'<span id="kakoyito-bagnutiyi-ssilka_service_name">API'K</span></a>' api you're looking for.</p>
         <p>The requested API was: <span id="broken-url"></span></p>
         <a href="/">Go to Homepage</a>
     </div>
@@ -31,6 +31,12 @@
         
         let lastSegment = currentUrl.slice(lastSlashIndex + 1);
         document.getElementById('broken-url').textContent = lastSegment;
+
+        if (lastSegment == "") 
+        {
+            document.getElementById('_error1').textContent = "We can't seem to find the page in <a href="./">'<span id="kakoyito-bagnutiyi-ssilka_service_name">API'K</span></a>' you're looking for.";
+            document.getElementById('broken-url').textContent = "";
+        }
 
         // You could also add more advanced features here, like:
         // - A search bar
