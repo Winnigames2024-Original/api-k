@@ -8,7 +8,8 @@ const audioFiles = [
 
 const playButton = document.getElementById('playButton');
 
-playButton.addEventListener('click', () => {
+function playRandomPrikolinyiySound() 
+{
     // 1. Получаем случайный индекс
     const randomIndex = Math.floor(Math.random() * audioFiles.length);
 
