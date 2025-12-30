@@ -1,0 +1,10 @@
+            - name: Setup PHP environment
+  # You may pin to the exact commit or the version.
+  # uses: nanasess/setup-php@e619ff94678ef0fa4251b3416bb3a80bc75cefb1
+  uses: nanasess/setup-php@v4.0.2
+  with:
+    # Version Spec of the version to use.  Examples: 8.1
+    php-version: # optional, default is 8.3
+    # Optional scope for authenticating against scoped registries
+    scope: # optional
+          
