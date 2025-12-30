@@ -27,4 +27,4 @@ function playRandomPrikolinyiySound()
         .catch(error => {
             console.error(`Ошибка при воспроизведении: ${error}`);
         });
-});
+};
