@@ -24,7 +24,12 @@
     <script>
         // JavaScript to dynamically show the problematic URL
         // window.location refers to the current (non-existent) page's URL
-        document.getElementById('broken-url').textContent = window.location.href.lastIndexOf('/');
+        const currentUrl = window.location.href;
+        const lastSlashIndex = currentUrl.lastIndexOf('/');
+
+        
+        let lastSegment = currentUrl.slice(lastSlashIndex + 1);
+        document.getElementById('broken-url').textContent = lastSegment;
 
         // You could also add more advanced features here, like:
         // - A search bar
