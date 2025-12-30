@@ -1,9 +1,9 @@
 // Массив путей к вашим аудиофайлам
 const audioFiles = [
+    'https://winnigames2024-original.github.io/api-k/nfc-prikol/diadia-sasha.mp3',
     'https://winnigames2024-original.github.io/api-k/nfc-prikol/bobr-kurva.mp3',
-    'https://winnigames2024-original.github.io/api-k/nfc-prikol/ahhhh-dadyaShasha-AHHHH.mp3',
-    'https://winnigames2024-original.github.io/api-k/nfc-prikol/PONOS.mp3',
-    'https://winnigames2024-original.github.io/api-k/nfc-prikol/pam-pam-pam.mp3' // Добавьте сколько угодно файлов
+    'https://winnigames2024-original.github.io/api-k/nfc-prikol/!!!PONOS!!!.mp3',
+    'https://winnigames2024-original.github.io/api-k/nfc-prikol/pam-pam-pam.mp3'
 ];
 
 const playButton = document.getElementById('playButton');
