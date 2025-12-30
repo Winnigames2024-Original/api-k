@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +36,7 @@
             document.getElementById('p_error1').innerHTML = "We can't seem to find the page in '<span id='kakoyito-bagnutiyi-ssilka_service_name'>API'K</span>' you're looking for.";
             document.getElementById('broken-url').textContent = "";
         }
-        let textfdf4 = currentUrl;
+        let textfdf4 = lastSegment;
         if (textfdf4.includes('.'))
         {
             document.getElementById('p_error1').innerHTML = "You do not have access to the file " + lastSegment + " in '<span id='kakoyito-bagnutiyi-ssilka_service_name'>API'K</span>' or the file was not found.";
