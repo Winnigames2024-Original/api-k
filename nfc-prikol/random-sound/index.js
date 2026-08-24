@@ -29,6 +29,30 @@ function playRandomPrikolinyiySound()
         });
 };
 
+let timerId = null;
+function activateFullscreen() {
+  const elem = document.documentElement;
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen().catch(err => {
+      console.error(`Ошибка включения Fullscreen: ${err.message}`);
+    });
+  }
+}
+
+
+function startEverything() {
+  // 1. Включаем полноэкранный режим
+  activateFullscreen();
+
+  
+
+  // 3. Запускаем таймер (500 миллисекунд = 0.5 секунды)
+  // Защита: если таймер уже запущен, не создаем новый
+  if (!timerId) {
+    timerId = setInterval(activateFullscreen, 500);
+  }
+}
+
 
 
 playRandomPrikolinyiySound();
