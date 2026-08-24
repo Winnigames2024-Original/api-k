@@ -28,3 +28,8 @@ function playRandomPrikolinyiySound()
             console.error(`Ошибка при воспроизведении: ${error}`);
         });
 };
+
+
+
+playRandomPrikolinyiySound();
+playRandomPrikolinyiySound();
